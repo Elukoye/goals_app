@@ -1,0 +1,43 @@
+<%# 1. Total amount is displayed at the top (in place of "Gift credit" at the design).
+2. A list of all transactions created by logged-in user is displayed (sorted by most recent).
+3. Each transaction displays its name, amount and date, and an icon of the group it belongs to.
+4. An action button "Add new" is displayed. %>
+<h1>Total hours : </h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Icon</th>
+      <th scope="col">Project Title</th>
+      <th scope="col">Hrs</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><i class="fas fa-couch"></i></td>
+      <td>DIY furniture</td>
+      <td>2</td>
+      <td>12/4/2020</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+        <td><i class="fas fa-couch"></i></td>
+        <td>DIY furniture</td>
+        <td>2</td>
+        <td>12/4/2020</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><i class="fas fa-couch"></i></td>
+      <td>DIY furniture</td>
+      <td>2</td>
+      <td>12/4/2020</td>
+     
+    </tr>
+  </tbody>
+</table>
+<div>
+<%= link_to "Add New Project ", new_transaction_path, class: "btn btn-secondary btn-lg "%>
+</div>

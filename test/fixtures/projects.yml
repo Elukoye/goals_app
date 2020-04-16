@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  AutherId: 1
+  project_name: MyString
+  hours: 1
+
+two:
+  AutherId: 1
+  project_name: MyString
+  hours: 1

@@ -1,7 +1,19 @@
-<h1>Homepage</h1>
-<p>Already a member?<%= link_to  'Login',  login_path%>
-<br>
- Or
- <br>
- <%= link_to 'Sign Up!', new_user_path%>
-</p>
+<div class='container' id='home-container'>
+        <div class="jumbotron text-center ">
+
+        <h1 class="display-4 font-weight-bold "><i class="fas fa-edit"></i>Goals_App</h1>
+
+        <p class="lead text-primary font-weight-normal font-italic"> A simple app that lets you group goals or projects and gives an overview of how many each project took .</p>
+        <i class="fas fa-list-ol text-primary"></i>  <i class="far fa-clock"></i><i class="fas fa-thumbs-up text-primary "></i>
+        <hr class="my-4">
+        <p class = 'font-italic font-weight-bold'>Create projects , group them and see how long they took to accomplish at zero cost.</p>
+        <%= link_to "Sign Up Now", new_user_path, class:"btn btn-dark btn-lg" %>
+        <p class = 'font-italic'> Already a Member? <%= link_to "Login", login_path, class:"btn btn-link"%></p>
+    </div>
+</div>
+<div id = "page-content"></div>
+<footer id="sticky-footer" class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <small>Copyright &copy;  <a href="github.com/Elukoye">Elukoye</a></small>
+    </div>
+</footer> 
