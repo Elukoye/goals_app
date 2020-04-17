@@ -1,32 +1,51 @@
-<form>
-  <div class="form-group row">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
+<%= render partial: '/transactions/navbar'%>
+<div class= "container">
+    <form>
+    <%= form_with scope: :transaction ,url: transactions_path,local: true do |f|%>
+        <div class="form-group row">
+                <%= f.label :Project_Name,class: "col-sm-2 col-form-label font-weight-bold" %>
+            <div class="col-sm-4">
+                <%= f.text_field :Project_Name,class:"form-control"%>
+            </div>
+        </div>
+        <div class="form-group row">
+            <%= f.label :Hours,class: "col-sm-2 col-form-label font-weight-bold" %>
+            <div class="col-sm-4">
+             <%= f.text_field :Hours,class:"form-control"%>
+            </div>
+        </div>
+    <br>
+    <div class="form-group row">
+        <div class="col-sm-2 font-weight-bold">Groups/Categories</div>
+        <div class="col-sm-10">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+            Choose a Group/Category
+            </label>
+        </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+            Choose a Group/Category
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+            Choose a Group/Category
+            </label>
+        </div>
+        </div>
+        <div class = "text-center">
+         <%= f.submit "Create Project" ,class: "btn btn-outline-primary " %>
+        <div>
+         <%end%>
+        </form>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3">
-    </div>
-  </div>
- 
-  <div class="form-group row">
-    <div class="col-sm-2">Groups/Categories</div>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Example group
-        </label>
-      </div>
-    </div>
-  </div>
-  
+    <br>
     <div class=" text-center" >
-      <%= link_to "Create Project ", "#", class: "btn btn-outline-primary "%>
-      <%= link_to "Back", transactions_path, class: "btn btn-outline-success "%>
-  </div>
-
-</form>
+     
+        <%= link_to "Back", transactions_path, class: "btn btn-outline-success "%>
+    </div>
+</div>
