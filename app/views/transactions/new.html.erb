@@ -1,51 +1,19 @@
 <%= render partial: '/transactions/navbar'%>
-<div class= "container">
-    <form>
-    <%= form_with scope: :transaction ,url: transactions_path,local: true do |f|%>
-        <div class="form-group row">
-                <%= f.label :Project_Name,class: "col-sm-2 col-form-label font-weight-bold" %>
-            <div class="col-sm-4">
-                <%= f.text_field :Project_Name,class:"form-control"%>
-            </div>
-        </div>
-        <div class="form-group row">
-            <%= f.label :Hours,class: "col-sm-2 col-form-label font-weight-bold" %>
-            <div class="col-sm-4">
-             <%= f.text_field :Hours,class:"form-control"%>
-            </div>
-        </div>
-    <br>
-    <div class="form-group row">
-        <div class="col-sm-2 font-weight-bold">Groups/Categories</div>
-        <div class="col-sm-10">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">
-            Choose a Group/Category
-            </label>
-        </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">
-            Choose a Group/Category
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">
-            Choose a Group/Category
-            </label>
-        </div>
-        </div>
-        <div class = "text-center">
-         <%= f.submit "Create Project" ,class: "btn btn-outline-primary " %>
-        <div>
-         <%end%>
-        </form>
+
+<h5 class ="font-weight-bold  text-center">Create a New Project:</h5>
+
+<%= form_with(model:@transaction,local: true ) do |f|%>
+     <div class="field">
+        <%= f.label :Name, class: "col-sm-2 col-form-label font-weight-bold" %>
+        <%= f.text_field :Name, class: "form-control", placeholder: "Project Name" %>
     </div>
-    <br>
-    <div class=" text-center" >
-     
-        <%= link_to "Back", transactions_path, class: "btn btn-outline-success "%>
+
+    <div class="field">
+        <%= f.label :Amount, class: "col-sm-2 col-form-label font-weight-bold" %>
+        <%= f.text_field :Amount, class: "form-control", placeholder: "Hours logged" %>
     </div>
-</div>
+
+     <div class="actions">
+        <%= f.submit class: "btn btn-outline-primary " %>
+    </div>
+<%end%>

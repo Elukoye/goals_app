@@ -4,13 +4,13 @@ class TransactionsController < ApplicationController
   end
 
   def index
-    @transactions = Transaction.all
+    @transactions = current_user.
   end
 
   def create
-    @transaction = Transaction.new(project_params)
+    @transaction = Transaction.new(transaction_params)
     if @transaction.save
-      redirect_ to @transaction
+      redirect_to transactions_path
     else
       render 'new'
     end
@@ -21,7 +21,8 @@ class TransactionsController < ApplicationController
   def set_project
     @transaction = Transaction.find(params[:id])
   end
-  def project_params
-    params.require(:transaction).permit(:Project_Name,:Hours)
+  def transaction_params
+    params.require(:transaction).permit(:Name, :Amount)
+   
   end
 end

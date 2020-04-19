@@ -1,7 +1,7 @@
 <%# A list of all transactions created by logged-in user is displayed (sorted by most recent).%>
 <%= render partial: '/transactions/navbar'%>
 
-<h1 class= "text-center">Total hours : </h1>
+<h1 class= "text-center">Total hours :<%= @transactions.sum(:Amount) %> </h1>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -13,34 +13,21 @@
     </tr>
   </thead>
   <tbody>
+  <% @transactions.each do |transaction|%>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row"><%=%></th>
       <td><i class="fas fa-couch"></i></td>
-      <td>DIY furniture</td>
-      <td>2</td>
-      <td>12/4/2020</td>
+      <td><%= transaction.Name%></td>
+      <td><%= transaction.Amount%></td>
+      <td><%= transaction.created_at.strftime("%a-%d-%Y")%></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-        <td><i class="fas fa-couch"></i></td>
-        <td>DIY furniture</td>
-        <td>2</td>
-        <td>12/4/2020</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td><i class="fas fa-couch"></i></td>
-      <td>DIY furniture</td>
-      <td>2</td>
-      <td>12/4/2020</td>
-     
-    </tr>
+   <%end%>
   </tbody>
 </table>
 
   <div class=" text-center" >
       <%= link_to "Add New Project ", new_transaction_path, class: "btn btn-outline-primary "%>
-      <%= link_to "Back", transactions_path, class: "btn btn-outline-success "%>
+      <%= link_to "Back", "#", class: "btn btn-outline-success "%>
   </div>
 
 
