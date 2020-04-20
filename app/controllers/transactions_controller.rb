@@ -4,11 +4,11 @@ class TransactionsController < ApplicationController
   end
 
   def index
-    @transactions = current_user.
+     @transactions= current_user.transactions
   end
 
   def create
-    @transaction = Transaction.new(transaction_params)
+    @transaction = current_user.transactions.build(transaction_params)
     if @transaction.save
       redirect_to transactions_path
     else
@@ -22,7 +22,7 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.find(params[:id])
   end
   def transaction_params
-    params.require(:transaction).permit(:Name, :Amount)
+    params.require(:transaction).permit(:Name, :Amount, :author_id)
    
   end
 end
