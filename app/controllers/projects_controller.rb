@@ -5,17 +5,17 @@ class ProjectsController < ApplicationController
     end
       
     def index
-        @projects= User.first.projects
+       @projects = Project.all 
     end
       
     def create
-        @project = Project.new(project_params)
-    
-        if @project.save
-         redirect_to projects_path 
-        else
+        @user = current_user
+        @project = @user.projects.create(project_params)
+         if @project.save
+           redirect_to projects_path
+         else
           render 'new'
-        end
+         end
       end
       
     private
