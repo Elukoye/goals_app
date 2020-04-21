@@ -1,4 +1,5 @@
 Rails.application.routes.draw do 
+  get 'categories/new'
   get 'projects/new'
   get 'projects/index'
  root   'homepage#index'
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
  
  resources :users
  resources :projects
+ resources :categories
  
 end

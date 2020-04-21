@@ -2,7 +2,7 @@
 
 <h5 class ="font-weight-bold  text-center">Create a New Project:</h5>
 
-<%= form_with(model:@project,local: true ) do |f|%>
+<%= form_for @category do |f|%>
      <div class="field">
         <%= f.label :title, class: "col-sm-2 col-form-label font-weight-bold" %>
         <%= f.text_field :title, class: "form-control", placeholder: "Project Title" %>
@@ -17,3 +17,4 @@
         <%= f.submit class: "btn btn-outline-primary " %>
     </div>
 <%end%>
+<%= link_to " Add Category", new_category_path, class: "nav-links"%>

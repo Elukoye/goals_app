@@ -1,0 +1,25 @@
+<%# A list of all transactions created by logged-in user is displayed (sorted by most recent).%>
+<%= render partial: '/projects/navbar'%>
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">icon</th>
+      <th scope="col">name</th>
+      <th scope="col">creation</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @categories.each do |c| %>
+      <tr>
+        <td>
+          <%= icon(group.icon, class: "fa-lg") %>
+        </td>
+        <td><%= link_to "#{group.name}", group %></td>
+        <td><%= group.created_at.strftime("%b %d, %Y").downcase %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
+
