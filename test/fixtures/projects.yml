@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  AutherId: 1
-  project_name: MyString
+  title: MyString
   hours: 1
+  user: one
 
 two:
-  AutherId: 1
-  project_name: MyString
+  title: MyString
   hours: 1
+  user: two
