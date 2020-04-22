@@ -1,22 +1,25 @@
 class ProjectsController < ApplicationController
-   
+   before_action :set_project, only: %i[show edit update destroy]
     def new
         @project = Project.new
+       
     end
       
     def index
-       @projects = Project.all 
+       @projects = current_user.projects
     end
       
     def create
-        @user = current_user
-        @project = @user.projects.create(project_params)
+        @project = current_user.projects.build(project_params)
          if @project.save
            redirect_to projects_path
          else
           render 'new'
          end
-      end
+    end
+
+    def show
+    end
       
     private
       
@@ -25,6 +28,6 @@ class ProjectsController < ApplicationController
     end
         
     def project_params
-        params.require(:project).permit(:title, :hours,:user_id)
+        params.require(:project).permit(:title, :hours,:category_id)
     end
 end

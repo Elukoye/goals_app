@@ -12,9 +12,15 @@
         <%= f.label :hours, class: "col-sm-2 col-form-label font-weight-bold" %>
         <%= f.text_field :hours, class: "form-control", placeholder: "Hours clocked" %>
     </div>
-
+ 
+     <div class="field">
+        <%= f.label :Category, class: "col-sm-2 col-form-label font-weight-bold" %>
+        <%= f.select :category_id,Category.all.map{|c| [c.name,c.id]}, class: "form-control", placeholder: "choose category" %>
+    </div>
+ <br>
      <div class="actions">
         <%= f.submit class: "btn btn-outline-primary " %>
     </div>
 <%end%>
-<%= link_to " Add Category", new_category_path, class: "nav-links"%>
+<br>
+<%= link_to " Add Category", new_category_path, class: "btn btn-outline-secondary"%>

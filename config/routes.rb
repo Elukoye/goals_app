@@ -1,7 +1,4 @@
 Rails.application.routes.draw do 
-  get 'categories/new'
-  get 'projects/new'
-  get 'projects/index'
  root   'homepage#index'
  get    '/login',   to: 'sessions#new' 
  post   '/login',   to: 'sessions#create' 

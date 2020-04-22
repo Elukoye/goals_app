@@ -1,19 +1,2 @@
 <h1 class="text-center mt-4">Login</h1>
-<div class = "container">
-   <div class="row justify-content-center">
-      
-        <%= form_for(:session, url: login_path) do |f|%>
-         <div class="form-group row">
-           <%= f.label :username%><br>
-         </div>
-         <div class="form-group row" >
-            <%= f.text_field :username%><br>
-         </div>
-         <div class="form-group row justify-content-center">
-            <%= f.submit "Log in", class: "btn btn-dark btn-lg" %>
-         </div>
-          <p>New user? <%= link_to "Sign up now!", new_user_path %></p>
-        <%end%>
-      
-    </div>
-</div>
+<%= render 'form'%>
