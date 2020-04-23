@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(username:params[:session][:username].downcase)
     if @user
       session[:user_id] = @user.id
+      flash[:notice] = "Successfully logged in!"
       redirect_to @user
     else
       render 'new'
