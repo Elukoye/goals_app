@@ -1,7 +1,7 @@
-# Project: [Building Grouping App](#)
-# Project: [Building Facebook](https://www.theodinproject.com/courses/ruby-on-rails/lessons/final-project)
+# Project: [Building Grouping App](![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160074-593e3a00-85d5-11ea-8761-b9b5bd6fc699.png)
+
 ## Live version of project :  [#)
-![screen](#)
+
 
 ## Description
 
