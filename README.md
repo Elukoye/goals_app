@@ -1,4 +1,4 @@
-# Project: [Building Grouping App](![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160074-593e3a00-85d5-11ea-8761-b9b5bd6fc699.png)
+# Project: [Building Grouping App]![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160338-0f098880-85d6-11ea-81eb-904afae5d400.png)
 
 ## Live version of project :  [#)
 
