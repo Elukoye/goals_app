@@ -1,26 +1,28 @@
-# Project: [Building Grouping App]![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160338-0f098880-85d6-11ea-81eb-904afae5d400.png)
+# Project: [Building Grouping App]
+![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160338-0f098880-85d6-11ea-81eb-904afae5d400.png)
 
 ## Live version of project :  [#)
 
 
 ## Description
-
-Building Facebook clone. As usual, any additional styling will be up to you but the really important stuff is to get the data and back end working properly. You’ll put together some of the core features of the platform – users, profiles, “friending”, posts, news feed, and “liking”. You’ll also implement sign-in with the real Facebook by using Omniauth and Devise.
+This Ruby on Rails capstone is based on an app for grouping activities by categories with your family/friends.It can  also be for grouping hours spent on different projects at your university or for grouping kilometers by means of transportations in your family - anything that you can share with other people and group by some category. 
 
 ## Skills 
 - [ ] Ruby on Rails
 - [ ] Bootstrap 4
 - [ ] PostgreSQL
+- [ ] RSpec
+- [ ] Capybara
 
 ## Features
 - [ ] A user can register for an account
 - [ ] A user can login and logout
-- [ ] A user can change their details
-- [ ] Bootstrap source in vendor/assets
-- [ ] Font awesome CSS source
+- [ ] A user can create activities/projects
+- [ ] A user can create groups/categories
+
 
 ## Environment
-- [ ] Ruby on Rails version 5.1.7
+- [ ] Ruby on Rails version 6.0.0.2
 
 - [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
 - [ ] Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
