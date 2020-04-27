@@ -22,7 +22,8 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 
 
 ## Environment
-- [ ] Ruby on Rails version 6.0.0.2
+- [ ] Ruby on Rails version  6.0.2.2
+- [ ] Ruby version 2.6.5
 
 - [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
 - [ ] Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
