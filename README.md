@@ -1,4 +1,4 @@
-# Project: [Building Grouping App]
+# Project: Building Goals App
 ![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160338-0f098880-85d6-11ea-81eb-904afae5d400.png)
 
 ## Live version of project :  [#)
@@ -26,12 +26,18 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 - [ ] Ruby version 2.6.5
 
 - [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
-- [ ] Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
+- [ ] Puma: A Ruby Web Server Built For Concurrency version '4.1'
+
+## Automated Tests
+- [ ] To get started with tests, install rails-rspec in your Gemfile 
+- [Clone the repo] https://github.com/Elukoye/goals_app.git
+
 
 ## Getting started
 - [ ] To get started with the app, clone the repo and then install the needed gems:
+- [Clone the repo] https://github.com/Elukoye/goals_app.git
 
-```
+``
 $ bundle install --without production
 ```
 
@@ -65,6 +71,8 @@ $ rails generate rspec:install
 $ aws postgres installed but unrecognized? Run sudo yum install postgresql-server:TO INSTALL POSTGRES SERVER
  type “ sudo service postgresql initdb” first before starting postgresql server
 ```
+
+
 ## Show your support
 
 - [ ] Give a ⭐️ if you like this project!
