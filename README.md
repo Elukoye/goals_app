@@ -24,16 +24,13 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 ## Environment
 - [ ] Ruby on Rails version  6.0.2.2
 - [ ] Ruby version 2.6.5
-
-- [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 4.3, ready to drop right into your Sass powered applications version 3.3.7
+- [ ] ([bootstrap](https://getbootstrap.com)  Bootstrap 4.3, ready to drop right into your Sass powered applications version 6.0
 - [ ] Puma: A Ruby Web Server Built For Concurrency version 4.1
-
-
 - [ ] To get started with tests, install rails-rspec in your Gemfile 
-Explain how to run the automated tests for this system
+
 
 ## Getting started
-- [ ] To get started with the app, clone or download the repo :[Clone the repo] https://github.com/Elukoye/goals_app.git
+- [ ] To get started with the app, clone or download the repo :[Clone the repo](https://github.com/Elukoye/goals_app.git)
 
 ## Install the gems: 
 - [ ] Run bundle install --without production command in your terminal to install the needed gems in your Gemfile
@@ -45,18 +42,19 @@ Explain how to run the automated tests for this system
 - [ ] Run rails db:migrate to run the migration files
 
 ## Running RSpec tests:
-- [ ] add rails-rspec,capybara and factory_bot gems in :test and :development group in the gemfile
-- [ ] run bundle install
-- [ ] run rails generate rspec:install to generate boilerplate config files
-- [ ] run rspec command to run the test files
-- [Click here for a more detailed explanation ](https://github.com/rspec/rspec-rails)
+- [ ] Add rails-rspec,capybara and factory_bot gems in :test and :development group in the gemfile
+- [ ] Run bundle install
+- [ ] Run rails generate rspec:install to generate boilerplate config files
+- [ ] Run rspec command to run the test files
 - [ ] If all the tests pass,then start the server
+- [Click here for a more details about setting up RSpec in a rails app](https://github.com/rspec/rspec-rails)
+
 
 ## Start the rails server:
-- [ ] Finally run: rails s to start the sever
-- [ ] Access the website by typing localhost:3000 on your browser(or whatever port you are connected to)
+- [ ] Run: rails s to start the sever
+- [ ] Type localhost:3000 on your browser(or whatever port you are connected to) toview your app on the browser
 
-## aws postgres installed but unrecognized?:
+## AWS postgres installed but unrecognized?:
 - [ ] Run sudo yum install postgresql-server:TO INSTALL POSTGRES SERVER type “ sudo service postgresql initdb” 
       first before starting postgresql server
 
@@ -69,15 +67,12 @@ Explain how to run the automated tests for this system
 - [ ] add pg gem to your Gemfile
 - [ ] heroku run rake db:migrate to migrate database
 - [ ] Run heroku open to visit application in the browser
-- [Click here for more details about deploying to heroku ](https://devcenter.heroku.com/articles/getting-started-with-rails6#add-the-pg-gem)
-
+- [Click here for more details about deploying a rails app to heroku ](https://devcenter.heroku.com/articles/getting-started-with-rails6#add-the-pg-gem)
 
 ## Show your support
-
 - [ ] Give a ⭐️ if you like this project!
 
 ## 📝 License
-
 * [ ] See [LICENSE.md](https://github.com/Anna-Myzukina/facebook-clone/blob/master/LICENSE.md) for details.
 
 ## Authors
