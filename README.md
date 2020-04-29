@@ -36,10 +36,19 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 - [ ] Run bundle install --without production command in your terminal to install the needed gems in your Gemfile
 
 ## Connect to the Database :
-- [ ] Run sudo service postgresql start to connect to the postgresqldatabase
+- [ ] Run rails db:create
 
 ## Migrate the database:
 - [ ] Run rails db:migrate to run the migration files
+
+## Run Yarn:
+- [ ] Run Yarn command in terminal incase you get a warning about yarn not being installed
+- [ ] This is because rails version 6 and above uses yarn to install webpacker which bundles and runs Javascript
+files instead of sprockets.
+
+## Start the rails server:
+- [ ] Run: rails s to start the sever
+- [ ] Type localhost:3000 on your browser(or whatever port you are connected to) to view your app on the browser
 
 ## Running RSpec tests:
 - [ ] Add rails-rspec,capybara and factory_bot gems in :test and :development group in the gemfile
@@ -48,11 +57,6 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 - [ ] Run rspec command to run the test files
 - [ ] If all the tests pass,then start the server
 - [Click here for a more details about setting up RSpec in a rails app](https://github.com/rspec/rspec-rails)
-
-
-## Start the rails server:
-- [ ] Run: rails s to start the sever
-- [ ] Type localhost:3000 on your browser(or whatever port you are connected to) toview your app on the browser
 
 ## AWS postgres installed but unrecognized?:
 - [ ] Run sudo yum install postgresql-server:TO INSTALL POSTGRES SERVER type “ sudo service postgresql initdb” 
