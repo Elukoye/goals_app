@@ -1,0 +1,30 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+#home-container{
+    margin-top:45px ;
+}
+
+
+.fa-list-ol,.fa-clock,.fa-thumbs-up{
+    margin-right: 45px;
+    font-size: 30px;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+/* Sticky Footer Classes */
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Navbar Classes */
+.navbar{
+  margin-bottom: 30px;
+}
