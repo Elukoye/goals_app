@@ -6,7 +6,7 @@ class ProjectsController < ApplicationController
     end
       
     def index
-       @projects = current_user.projects
+       @projects = current_user.projects.includes(:category)
     end
       
     def create
