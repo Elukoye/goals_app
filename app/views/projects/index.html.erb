@@ -13,16 +13,18 @@
     </tr>
   </thead>
   <tbody>
-  <% @projects.each do |project|%>
-    <tr>
-      <th scope="row"><%=%></th>
-      <td><i class="fas fa-couch"></i></td>
-      <td><%= project.category.name if project.category %></td>
-      <td><%= project.title%></td>
-      <td><%= project.hours%></td>
-      <td><%= project.created_at.strftime("%a-%d-%Y")%></td>
-    </tr>
-   <%end%>
+    <% @projects.each do |project|%>
+      <%if current_user.projects.any?%>
+        <tr>
+          <th scope="row"><%=%></th>
+          <td><i class="fas fa-couch"></i></td>
+          <td><%= project.category.name if project.category %></td>
+          <td><%= project.title%></td>
+          <td><%= project.hours%></td>
+          <td><%= project.created_at.strftime("%a-%d-%Y")%></td>
+        </tr>
+        <%end%>
+    <%end%>
   </tbody>
 </table>
 

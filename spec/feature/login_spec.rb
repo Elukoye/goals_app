@@ -1,17 +1,23 @@
-# require 'rails_helper'
+require 'rails_helper'
 
-# RSpec.feature "Sessions", :type => :feature do
-#      scenario "log in already existing user" do
-#         visit "/users/new"
-#         fill_in "user[username]", :with => ""
-#         click_link "Log in"
-#         expect(page).to have_text("Your Dashboard.")
-#     end
+RSpec.feature "Sessions", :type => :feature do
 
-#     scenario "log in already existing user" do
-#         visit "/users/new"
-#         fill_in "user[username]", :with => "bridget"
-#         click_link "Log in"
-#         expect(page).to have_content("Successfully logged in!")
-#     end
-# end
+    before do
+        @user = User.create(username: "bridgeta")
+    end 
+
+     scenario "log in already existing user" do
+        visit "/users/new"
+        fill_in "user[username]", :with => ""
+        click_button "Login"
+        expect(page).to have_css '.class'
+    end
+
+    # scenario "log in already existing user" do
+    #     visit "/users/new"
+    #     fill_in "user[username]", with: @user.username
+    #     # fill_in "user[username]", :with => "bridget"
+    #     click_button "Log in"
+    #     expect(page).to have_content("Successfully logged in!")
+    # end
+end

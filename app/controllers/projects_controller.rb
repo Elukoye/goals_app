@@ -6,15 +6,17 @@ class ProjectsController < ApplicationController
     end
       
     def index
-       @projects = current_user.projects.includes(:category)
+       @projects = current_user.projects.includes(:category) 
     end
       
     def create
         @project = current_user.projects.build(project_params)
          if @project.save
-           redirect_to projects_path
+            flash[:notice] = "Project Successfully created!"
+            redirect_to projects_path
          else
-          render 'new'
+            flash[:notice] = "Project not created!"
+            render 'new'
          end
     end
 
