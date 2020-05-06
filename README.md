@@ -83,6 +83,3 @@ files instead of sprockets.
 
 👤 **Author1**
 * [ ] [Emogene Akwiri](https://github.com/Elukoye)
-
-
-
