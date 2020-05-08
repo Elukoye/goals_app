@@ -26,8 +26,8 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 ## Environment
 - [ ] Ruby on Rails version  6.0.2.2
 - [ ] Ruby version 2.6.5
-- [ ] ([bootstrap](https://getbootstrap.com)  Bootstrap 4.3, ready to drop right into your Sass powered applications version 6.0
-- [To install Bootstrap 4 and above in Rails 6 that uses Webpacker and yarn:  ] (https://www.mashrurhossain.com/blog/rails6bootstrap4)
+- [ ] [bootstrap](https://getbootstrap.com)  Bootstrap 4.3, ready to drop right into your Sass powered applications version 6.0
+- [ ] [Use yarn to add Bootstrap and its dependencies](https://www.mashrurhossain.com/blog/rails6bootstrap4)
 - [ ] Puma: A Ruby Web Server Built For Concurrency version 4.1
 - [ ] To get started with tests, install rails-rspec in your Gemfile 
 
