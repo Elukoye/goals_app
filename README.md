@@ -9,8 +9,6 @@ This Ruby on Rails capstone is based on an app for grouping activities by catego
 You can access all the design info (color, typography, layouts) in this link:
 - [Design idea by Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
 
-
-
 ## Special rules
 - [ ] Complete Ruby on Rails capstone projects as usual.
 - [ ] For Final capstone project:
