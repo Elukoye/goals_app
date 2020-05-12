@@ -6,6 +6,20 @@
 
 ## Description
 This Ruby on Rails capstone is based on an app for grouping activities by categories with your family/friends.It can  also be for grouping hours spent on different projects at your university or for grouping kilometers by means of transportations in your family - anything that you can share with other people and group by some category. 
+You can access all the design info (color, typography, layouts) in this link:
+ [Design idea by Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
+
+
+
+## Special rules
+- [ ] Complete Ruby on Rails capstone projects as usual.
+- [ ] For Final capstone project:
+    - [ ] Please read the requirements for both parts: backend and frontend. This will help you to imagine what you need to build.
+   - [ ] Please build only API for the described project.
+    - [ ] In addition:
+       - [ ] Create a user table in your database, so that a given user could only access the objects they created.
+       - [ ] Create endpoints for admin actions: create / update / delete objects.
+        - [ ] Nice to have requirement: implement token authentication for admin action endpoints.
 
 ## Technologies
 - [ ] Ruby on Rails
