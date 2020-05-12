@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[show ]
+  before_action :set_category, only: %i[show]
   def new
     @category = Category.new
   end
@@ -17,16 +17,15 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
-  private 
+  private
 
   def set_category
     @category = Category.find(params[:id])
   end
 
   def category_params
-    params.require(:category).permit(:name ,:icon)
+    params.require(:category).permit(:name, :icon)
   end
 end
