@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use postgresql as the database for Active Record
 
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 gem 'bootstrap-sass', '~> 3.4.1'
@@ -46,6 +46,7 @@ group :development do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_bot_rails'
   gem 'database_cleaner'
+  gem 'bullet'
 end
 
 group :test do

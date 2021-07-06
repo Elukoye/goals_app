@@ -1,12 +1,12 @@
 # Project: Building Goals App
 ![Screenshot (167)](https://user-images.githubusercontent.com/46542515/80160338-0f098880-85d6-11ea-81eb-904afae5d400.png)
 
-## Live version of project :  [#)
+## Live version of project : [goals_app](https://secret-sierra-04969.herokuapp.com/)
 
 
 ## Description
 This Ruby on Rails capstone is based on an app for grouping activities by categories with your family/friends.It can  also be for grouping hours spent on different projects at your university or for grouping kilometers by means of transportations in your family - anything that you can share with other people and group by some category. 
-You can access all the design info (color, typography, layouts) in this link:
+You can access all the design info (color, typography, layouts) in
  [Design idea by Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
 
 
@@ -20,7 +20,7 @@ You can access all the design info (color, typography, layouts) in this link:
        - [ ] Create a user table in your database, so that a given user could only access the objects they created.
        - [ ] Create endpoints for admin actions: create / update / delete objects.
         - [ ] Nice to have requirement: implement token authentication for admin action endpoints.
-
+   
 ## Technologies
 - [ ] Ruby on Rails
 - [ ] Bootstrap 4
@@ -34,11 +34,14 @@ You can access all the design info (color, typography, layouts) in this link:
 - [ ] A user can create activities/projects
 - [ ] A user can create groups/categories
 
+## Added Feature
+- [ ] Created a drop down menu for every category added in the project/new page.It displayes the most recent category created first.
 
 ## Environment
 - [ ] Ruby on Rails version  6.0.2.2
 - [ ] Ruby version 2.6.5
-- [ ] ([bootstrap](https://getbootstrap.com)  Bootstrap 4.3, ready to drop right into your Sass powered applications version 6.0
+- [ ] [Bootstrap 4.3](https://getbootstrap.com) ready to drop right into your Sass powered applications version 6.0
+- [ ] [Add Bootstrap and its dependencies using yarn with this link.](https://www.mashrurhossain.com/blog/rails6bootstrap4)
 - [ ] Puma: A Ruby Web Server Built For Concurrency version 4.1
 - [ ] To get started with tests, install rails-rspec in your Gemfile 
 
@@ -97,6 +100,3 @@ files instead of sprockets.
 
 👤 **Author1**
 * [ ] [Emogene Akwiri](https://github.com/Elukoye)
-
-
-
